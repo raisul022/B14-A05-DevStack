@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TechnologyCard from './components/TechnologyCard';
 import YourStack from './components/YourStack';
+import Footer from './components/Footer';
 
 function App() {
   const [technologies, setTechnologies] = useState([]);
@@ -24,7 +25,6 @@ function App() {
       });
   }, []);
 
-  // Add technology to stack
   const handleAddToStack = (technology) => {
     if (stack.some((item) => item.id === technology.id)) {
       toast.warning(`${technology.name} is already in your stack.`);
@@ -36,7 +36,7 @@ function App() {
     toast.success(`${technology.name} added to your stack!`);
   };
 
-  // Remove one technology from stack
+
   const handleRemoveFromStack = (id) => {
     const technology = stack.find((item) => item.id === id);
 
@@ -49,7 +49,7 @@ function App() {
     }
   };
 
-  // Remove all technologies from stack
+  
   const handleRemoveAll = () => {
     if (stack.length === 0) {
       return;
@@ -108,6 +108,8 @@ function App() {
           )}
         </div>
       </section>
+
+      <Footer />
     </>
   );
 }
