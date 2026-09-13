@@ -1,16 +1,16 @@
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 
 function App() {
   return (
     <>
       <Navbar />
+      <Hero />
 
-      <main>
-        <section id="home" className="placeholder-section">
-          <h1>Dev Stack Builder</h1>
-          <p>Build your perfect development stack.</p>
-        </section>
-      </main>
+      <section id="technologies"></section>
+      <section id="projects"></section>
+      <section id="about"></section>
+      <section id="contact"></section>
     </>
   );
 }
