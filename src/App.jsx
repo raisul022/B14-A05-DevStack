@@ -1,9 +1,17 @@
+import Navbar from './components/Navbar';
+
 function App() {
   return (
-    <div>
-      <h1>Dev Stack Builder</h1>
-      <p>Build your perfect development stack.</p>
-    </div>
+    <>
+      <Navbar />
+
+      <main>
+        <section id="home" className="placeholder-section">
+          <h1>Dev Stack Builder</h1>
+          <p>Build your perfect development stack.</p>
+        </section>
+      </main>
+    </>
   );
 }
 
