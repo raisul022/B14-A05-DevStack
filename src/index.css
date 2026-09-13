@@ -301,3 +301,21 @@ a {
     width: min(100%, 360px);
   }
 }
+.technologies-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.technologies-section h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.loading-state {
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-gray);
+  font-size: 16px;
+}
