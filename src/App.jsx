@@ -80,11 +80,12 @@ function App() {
             </p>
           </div>
 
-          {loading ? (
-            <div className="loading-state">
-              Loading technologies...
-            </div>
-          ) : (
+         {loading ? (
+  <div className="loading-state">
+    <div className="loading-spinner"></div>
+    <p>Loading technologies...</p>
+  </div>
+) : (
             <div className="technology-layout">
               <div className="technology-grid">
                 {technologies.map((technology) => (
